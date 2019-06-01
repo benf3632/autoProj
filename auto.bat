@@ -1,5 +1,5 @@
 @ECHO off
-auto.py %1 %2 %3
+auto.py %1 %2 %3 %4
 if %ERRORLEVEL% == "15" (
     exit /B
 ) else (
