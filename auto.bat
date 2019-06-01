@@ -1,4 +1,8 @@
 @ECHO off
-cd %HOMEPATH%/Documents/Programming
-mkdir %1
-cd %1
+auto.py %1 %2 %3
+if %ERRORLEVEL% == "15" (
+    exit /B
+) else (
+    cd %HOMEPATH%/Documents/Programming/%1
+    code .
+)
